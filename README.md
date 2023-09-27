@@ -10,3 +10,4 @@ https://blog.rockthejvm.com/oauth-authentication-scala-http4s/
 - CirisVersion   3.2.0
 - CirceVersion   0.14.1
 
+# oauth-authentication-scala-http4s
