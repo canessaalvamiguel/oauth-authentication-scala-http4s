@@ -19,7 +19,7 @@ object GithubRoutes{
       case request @ GET -> Root / "index.html" =>
         StaticFile
           .fromString(
-            "oauth/src/main/scala/com/xonal/index.html",
+            "src/main/scala/com/xonal/index.html",
             Some(request)
           )
           .getOrElseF(NotFound()) // In case the file doesn't exist
