@@ -64,7 +64,10 @@ object OauthImpl{
       uri"https://api.github.com/user/emails",
       headers = Headers(
         Accept(MediaType.application.json),
-        Authorization(Credentials.Token(AuthScheme.Bearer, access_token))
+        //Header("Accept","application/vnd.github+json"),
+        Authorization(Credentials.Token(AuthScheme.Bearer, access_token)),
+        Header("X-GitHub-Api-Version", "2022-11-28"),
+        Header("User-Agent", "request")
       )
     )
     getJsonString(req)
